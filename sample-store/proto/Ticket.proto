@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.andersonbraz.protobuf;
+
+option java_package = "com.andersonbraz.model.protobuf";
+option java_outer_classname = "TicketProto";
+
+message TicketMessage{
+	int64 id = 1;
+	string event = 2;
+	string name = 3;
+	string date = 4;
+	string code = 5;
+	double price = 6;
+	bool discount = 7;
+}
